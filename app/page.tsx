@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Footer } from './components/footer'
 
 export default function Home() {
   return (
@@ -8,12 +9,12 @@ export default function Home() {
       <h3 className="text-xl font-bold text-center text-stone-300 col-span-1 sm:col-span-4">
         Finn et fotoalbum:
       </h3>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline">/sofie-bday</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline">/stavanger-24</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline">/bday-24</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline">/cheer-af-v24</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline">/østen</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline">/vinterball-24</a>
+      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/sofie-bday</a>
+      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/stavanger-24</a>
+      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/bday-24</a>
+      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/cheer-af-v24</a>
+      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/østen</a>
+      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/vinterball-24</a>
     </div>
     <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
       <h3 className="text-xl font-bold text-center text-pink-400">
@@ -37,6 +38,7 @@ export default function Home() {
         </p>
       </div>
     </div>
+    <Footer />
     </main>
   );
 }
