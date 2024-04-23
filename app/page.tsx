@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-24 pb-24">
+    <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
     <Image src="/images/logo.png" alt="#linselus" width={400} height={300} priority />
     <div className="grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-3 max-w-2xl">
       <h3 className="text-xl font-bold text-center text-stone-300 col-span-1 sm:col-span-4">
@@ -15,7 +15,7 @@ export default function Home() {
       <a href="#" className="font-medium text-center text-stone-400 hover:underline">/østen</a>
       <a href="#" className="font-medium text-center text-stone-400 hover:underline">/vinterball-24</a>
     </div>
-    <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-5xl sm:max-w-2xl">
+    <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
       <h3 className="text-xl font-bold text-center text-pink-400">
         The star of the show 💖
       </h3>
@@ -26,7 +26,7 @@ export default function Home() {
         </p>
       </div> 
     </div>
-    <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-5xl sm:max-w-2xl">
+    <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
       <h3 className="text-xl font-bold text-center text-orange-300">
         Bak kameraet ✌🏽
       </h3>
