@@ -15,7 +15,7 @@ export default function Home() {
       <a href="#" className="font-medium text-center text-stone-400 hover:underline">/østen</a>
       <a href="#" className="font-medium text-center text-stone-400 hover:underline">/vinterball-24</a>
     </div>
-    <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-2xl">
+    <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-5xl sm:max-w-2xl">
       <h3 className="text-xl font-bold text-center text-pink-400">
         The star of the show 💖
       </h3>
@@ -26,7 +26,7 @@ export default function Home() {
         </p>
       </div> 
     </div>
-    <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-2xl">
+    <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-5xl sm:max-w-2xl">
       <h3 className="text-xl font-bold text-center text-orange-300">
         Bak kameraet ✌🏽
       </h3>
