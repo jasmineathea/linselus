@@ -22,7 +22,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/cam.png" alt="kamera" width={300} height={200} layout="intrinsic" />
         <p className="text-base text-pink-300 text-center pb-3 sm:pb-0 sm:px-2">
-          Fujifilm Finepix A204 fra 2002. "Kjøpt'n på Tise", som Mina ville sagt :)
+          Fujifilm Finepix A204 fra 2002. &quot;Kjøpt&#39;n på Tise&quot;, som Mina ville sagt :)
         </p>
       </div> 
     </div>
