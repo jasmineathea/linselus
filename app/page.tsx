@@ -34,7 +34,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/jasmine.png" alt="jasmine" width={300} height={200} layout="intrinsic" />
         <p className="text-base text-orange-200 text-center pb-3 sm:pb-0 sm:px-2">
-          Jasmine, 24 år gammel. Studerer informatikk på UiB og økonomi på NHH. Besøkte NASA i 2023 og kommer aldri til å slutte å snakke om det. Liker å være kreativ, lese bøker, hekle, sy, og spille Sims 2 når jeg har tid (hehe). Her har jeg samlet noen av interessene mine: programmering + ta bilder 🤠
+          Jasmine, 24 år gammel. Studerer informatikk på UiB og økad på NHH. Besøkte NASA i 2023 og kommer aldri til å slutte å snakke om det. Liker å være kreativ, trene, lese bøker, hekle, sy, og spille Sims 2 når jeg har tid (hehe). Her har jeg samlet to av interessene mine: programmering + ta bilder 🤠
         </p>
       </div>
     </div>
