@@ -9,6 +9,8 @@ export default function Home() {
       <h3 className="text-xl font-bold text-center text-stone-300 col-span-1 sm:col-span-4">
         Finn et fotoalbum:
       </h3>
+      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/botfest-v24</a>
+      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/bcm-24</a>
       <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/sofie-bday</a>
       <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/stavanger-24</a>
       <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/bday-24</a>
