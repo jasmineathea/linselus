@@ -31,12 +31,12 @@ export default function Home() {
     </div>
     <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
       <h3 className="text-xl font-bold text-center text-orange-300">
-        Bak kameraet ✌🏽
+        Bak kameraet 😎
       </h3>
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/jasmine.png" alt="jasmine" width={300} height={200} layout="intrinsic" />
         <p className="text-base text-orange-200 text-center pb-3 sm:pb-0 sm:px-2">
-          Jasmine, 24 år gammel. Studerer informatikk på UiB og økad på NHH. Besøkte NASA i 2023 og kommer aldri til å slutte å snakke om det. Liker å være kreativ, trene, lese bøker, hekle, sy, og spille Sims 2 når jeg har tid (hehe). Her har jeg samlet to av interessene mine: programmering + ta bilder 🤠
+        Hei og velkommen! 👋🏽 Jeg heter Jasmine og studerer datateknologi på UiB og økad på NHH. Jeg liker å være kreativ, trene, lese bøker, hekle, sy, og spille Sims 2 når jeg har tid (hehe). Her har jeg samlet to av interessene mine: programmering + ta bilder
         </p>
       </div>
     </div>
