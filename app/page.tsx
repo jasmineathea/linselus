@@ -1,7 +1,20 @@
 import Image from 'next/image';
+import Link from "next/link";
 import { Footer } from './components/footer'
 
-export default function Home() {
+import { defineQuery } from "next-sanity";
+import { client } from "@/sanity/lib//client";
+
+const options = { next: { revalidate: 60 } };
+
+const ALBUM_QUERY = defineQuery(`*[
+  _type == "album"
+  && defined(slug.current)
+]{_id, name, slug, date}|order(date desc)`);
+
+export default async function Home() {
+  const photos = await client.fetch(ALBUM_QUERY, {}, options);
+
   return (
     <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
     <Image src="/images/logo.png" alt="#linselus" width={400} height={300} priority />
@@ -24,9 +37,10 @@ export default function Home() {
       </h3>
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/cam.png" alt="kamera" width={300} height={200} layout="intrinsic" />
-        <p className="text-base text-pink-300 text-center pb-3 sm:pb-0 sm:px-2">
-          Fujifilm Finepix A204 fra 2002. &quot;Kjøpt&#39;n på Tise&quot;, som Mina ville sagt :)
-        </p>
+        <div className="text-base text-pink-300 text-center pb-3 sm:pb-0 sm:px-2">
+          <p className="mb-4">Fujifilm Finepix A204 fra 2002. &quot;Kjøpt&#39;n på Tise&quot;, som Mina ville sagt :)</p>
+          <p>Dersom du tilfeldigvis selger et fungerende xd-minnekort til Fujifilm eller Olympus, gi meg en lyd asap 😭</p>
+        </div>
       </div> 
     </div>
     <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
