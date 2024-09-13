@@ -2,6 +2,10 @@ import { client, urlFor } from "@/sanity/lib/client";
 import { defineQuery } from "next-sanity";
 import { notFound } from "next/navigation";
 
+import Image from 'next/image';
+import Link from "next/link";
+import { Footer } from '../../components/footer'
+
 const ALBUM_BY_SLUG_QUERY = defineQuery(`*[
   _type == "album" && slug.current == $slug
 ][0]{
@@ -21,16 +25,6 @@ interface AlbumPageProps {
   };
 }
 
-// formatert dato
-const formatDate = (datetime: string) => {
-  const date = new Date(datetime);
-  return date.toLocaleDateString('no-NO', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
-};
-
 export default async function AlbumPage({ params }: AlbumPageProps) {
   const { slug } = params;
 
@@ -42,20 +36,31 @@ export default async function AlbumPage({ params }: AlbumPageProps) {
   }
 
   return (
-    <main className="min-h-screen p-4">
-      <h1 className="text-3xl font-bold text-center text-pink-500">{album.name}</h1>
-      <p className="text-center text-sm text-stone-500">{formatDate(album.date)}</p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+    <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
+    <Image src="/images/logo.png" alt="#linselus" width={400} height={300} priority />
+      <Link href="/" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">
+      /cd ..
+      </Link>
+      <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md w-full max-w-4xl">
+      <h3 className="mb-4 text-3xl font-bold text-center text-stone-300">{album.name} </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {album.gallery?.map((image: any) => (
-          <div key={image.asset._id}>
+          <div 
+            key={image.asset._id} 
+            className="flex justify-center items-center">
             <img
               src={urlFor(image).url()}
               alt={album.name}
+              className="w-full h-auto max-w-lg" // Larger images with rounded corners
             />
           </div>
         ))}
       </div>
+      </div>
+      <Link href="/" className="font-medium text-center text-stone-400 hover:underline hover:text-orange-200">
+      /cd ..
+      </Link>
+      <Footer />
     </main>
   );
 }

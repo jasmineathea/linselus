@@ -19,7 +19,9 @@ const ALBUM_QUERY = defineQuery(`*[
 
 export default async function Home() {
   const albums = await client.fetch(ALBUM_QUERY, {}, options);
-  console.log("Fetched albums:", albums); // Se i terminalen hvilke fotoalbum som lastes inn
+
+  // Se i terminalen hvilke fotoalbum som lastes inn
+  // console.log("Fetched albums:", albums);
 
   return (
     <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
