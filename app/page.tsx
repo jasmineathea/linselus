@@ -7,13 +7,19 @@ import { client } from "@/sanity/lib//client";
 
 const options = { next: { revalidate: 60 } };
 
+// hente ut album fra Sanity
 const ALBUM_QUERY = defineQuery(`*[
   _type == "album"
-  && defined(slug.current)
-]{_id, name, slug, date}|order(date desc)`);
+]{
+  _id, 
+  name, 
+  slug, 
+  date
+} | order(date desc)`);
 
 export default async function Home() {
-  const photos = await client.fetch(ALBUM_QUERY, {}, options);
+  const albums = await client.fetch(ALBUM_QUERY, {}, options);
+  console.log("Fetched albums:", albums); // Se i terminalen hvilke fotoalbum som lastes inn
 
   return (
     <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
@@ -22,14 +28,12 @@ export default async function Home() {
       <h3 className="text-xl font-bold text-center text-stone-300 col-span-1 sm:col-span-4">
         Finn et fotoalbum:
       </h3>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/botfest-v24</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/bcm-24</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/sofie-bday</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/stavanger-24</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/bday-24</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/cheer-af-v24</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/østen</a>
-      <a href="#" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">/vinterball-24</a>
+        {/* Generere lenker dynamisk fra Sanity */}
+        {albums.map((album: any) => (
+        <Link key={album._id} href={`/albums/${album.slug.current}`} className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">
+          {`/${album.slug.current}`}
+        </Link>
+      ))}
     </div>
     <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
       <h3 className="text-xl font-bold text-center text-pink-400">
