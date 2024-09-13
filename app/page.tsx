@@ -45,7 +45,8 @@ export default async function Home() {
         <Image src="/images/cam.png" alt="kamera" width={300} height={200} layout="intrinsic" />
         <div className="text-base text-pink-300 text-center pb-3 sm:pb-0 sm:px-2">
           <p className="mb-4">Fujifilm Finepix A204 fra 2002. &quot;Kjøpt&#39;n på Tise&quot;, som Mina ville sagt :)</p>
-          <p>Dersom du tilfeldigvis selger et fungerende xd-minnekort til Fujifilm eller Olympus, gi meg en lyd asap 😭</p>
+          <p className="mb-4">Dersom du tilfeldigvis selger et fungerende xd-minnekort til Fujifilm eller Olympus, gi meg en lyd asap 😭</p>
+          <p>**noen album har bilder fra div engangskameraer</p>
         </div>
       </div> 
     </div>
