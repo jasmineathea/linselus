@@ -38,9 +38,6 @@ export default async function AlbumPage({ params }: AlbumPageProps) {
   return (
     <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
     <Image src="/images/logo.png" alt="#linselus" width={400} height={300} priority />
-      <Link href="/" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">
-      /cd ..
-      </Link>
       <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md w-full max-w-4xl">
       <h3 className="mb-4 text-3xl font-bold text-center text-stone-300">{album.name} </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -51,7 +48,7 @@ export default async function AlbumPage({ params }: AlbumPageProps) {
             <img
               src={urlFor(image).url()}
               alt={album.name}
-              className="w-full h-auto max-w-lg" // Larger images with rounded corners
+              className="w-full h-auto max-w-lg"
             />
           </div>
         ))}
