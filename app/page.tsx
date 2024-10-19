@@ -39,7 +39,7 @@ export default async function Home() {
     </div>
     <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
       <h3 className="text-xl font-bold text-center text-pink-400">
-        The star of the show 💖
+        The star of the show 🩷
       </h3>
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/cam.png" alt="kamera" width={300} height={200} layout="intrinsic" />
