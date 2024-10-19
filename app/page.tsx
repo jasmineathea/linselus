@@ -27,7 +27,7 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
     <Image src="/images/logo.png" alt="#linselus" width={400} height={300} priority />
     <div className="grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-3 max-w-2xl">
-      <h3 className="text-xl font-bold text-center text-stone-300 col-span-1 sm:col-span-4">
+      <h3 className="text-xl font-bold text-center text-stone-300 col-span-2 sm:col-span-4">
         Finn et fotoalbum:
       </h3>
         {/* Generere lenker dynamisk fra Sanity */}
@@ -43,7 +43,7 @@ export default async function Home() {
       </h3>
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/cam.png" alt="kamera" width={300} height={200} layout="intrinsic" />
-        <div className="text-base text-pink-300 text-center pb-3 sm:pb-0 sm:px-2">
+        <div className="text-base text-pink-300 text-center pb-3 sm:pb-0 sm:px-2 mb-4">
           <p className="mb-4">Fujifilm Finepix A204 fra 2002. &quot;Kjøpt&#39;n på Tise&quot;, som Mina ville sagt :)</p>
           <p> Dersom du tilfeldigvis selger et fungerende xd-minnekort til Fujifilm eller Olympus, gi meg en lyd asap 😭</p>
         </div>
@@ -55,7 +55,7 @@ export default async function Home() {
       </h3>
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/jasmine.png" alt="jasmine" width={300} height={200} layout="intrinsic" />
-        <p className="text-base text-blue-200 text-center pb-3 sm:pb-0 sm:px-2">
+        <p className="text-base text-blue-200 text-center pb-3 sm:pb-0 sm:px-2 mb-4">
         Hei og velkommen! 👋🏽 Jeg heter Jasmine og studerer datateknologi på UiB og økad på NHH. Jeg liker å være kreativ, trene, lese bøker, hekle, sy, og spille Sims 2 når jeg har tid (hehe). Her har jeg samlet to av interessene mine: programmering + ta bilder
         </p>
       </div>
