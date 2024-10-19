@@ -45,21 +45,28 @@ export default async function Home() {
         <Image src="/images/cam.png" alt="kamera" width={300} height={200} layout="intrinsic" />
         <div className="text-base text-pink-300 text-center pb-3 sm:pb-0 sm:px-2">
           <p className="mb-4">Fujifilm Finepix A204 fra 2002. &quot;Kjøpt&#39;n på Tise&quot;, som Mina ville sagt :)</p>
-          <p className="mb-4">Dersom du tilfeldigvis selger et fungerende xd-minnekort til Fujifilm eller Olympus, gi meg en lyd asap 😭</p>
-          <p>**noen album har bilder fra div engangskameraer</p>
+          <p> Dersom du tilfeldigvis selger et fungerende xd-minnekort til Fujifilm eller Olympus, gi meg en lyd asap 😭</p>
         </div>
       </div> 
     </div>
     <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
-      <h3 className="text-xl font-bold text-center text-orange-300">
-        Bak kameraet 😎
+      <h3 className="text-xl font-bold text-center text-blue-300">
+        Bak kameraet 🪩
       </h3>
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/jasmine.png" alt="jasmine" width={300} height={200} layout="intrinsic" />
-        <p className="text-base text-orange-200 text-center pb-3 sm:pb-0 sm:px-2">
+        <p className="text-base text-blue-200 text-center pb-3 sm:pb-0 sm:px-2">
         Hei og velkommen! 👋🏽 Jeg heter Jasmine og studerer datateknologi på UiB og økad på NHH. Jeg liker å være kreativ, trene, lese bøker, hekle, sy, og spille Sims 2 når jeg har tid (hehe). Her har jeg samlet to av interessene mine: programmering + ta bilder
         </p>
       </div>
+    </div>
+    <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
+      <h3 className="text-xl font-bold text-center text-orange-300 mb-4">
+        Bak nettsiden 🚀
+      </h3>
+      <p className="text-base text-orange-200 text-center pb-3 sm:pb-0 sm:px-2 mb-4">
+        Denne nettsiden er laget ved hjelp av moderne teknologier som <strong>Next.js</strong> og <strong>TypeScript</strong>, <strong>Sanity</strong> for bildeopplastning og <strong>Vercel</strong> for distribusjon.
+      </p>
     </div>
     <Footer />
     </main>

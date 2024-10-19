@@ -15,7 +15,7 @@ export function Footer() {
           </Link>
         </div>
         <p className="text-stone-300">
-          Jasmine A. Næss 🍓 2024
+          Jasmine A. Næss 🧸 2024
         </p>
       </nav>
     );

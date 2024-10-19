@@ -12,6 +12,7 @@ const ALBUM_BY_SLUG_QUERY = defineQuery(`*[
   _id, 
   name, 
   date,
+  camera,
   gallery[] {
     asset -> {
       _id
@@ -37,9 +38,15 @@ export default async function AlbumPage({ params }: AlbumPageProps) {
 
   return (
     <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
-    <Image src="/images/logo.png" alt="#linselus" width={400} height={300} priority />
+    <Link href="/">
+        <Image src="/images/logo.png" alt="#linselus" width={400} height={300} priority />
+    </Link>
+
       <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md w-full max-w-4xl">
       <h3 className="mb-4 text-3xl font-bold text-center text-stone-300">{album.name} </h3>
+      <p className="font-medium text-center text-stone-400 mb-2"> 📅 {album.date} </p>
+      <p className="font-medium text-center text-stone-400 mb-8"> 📷 {album.camera} </p>
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {album.gallery?.map((image: any) => (
           <div 

@@ -18,7 +18,11 @@ export const album = defineType({
     }),
     defineField({
         name: 'date',
-        type: 'datetime',
+        type: 'date',
+    }),
+    defineField({
+        name: 'camera',
+        type: 'string',
     }),
     defineField({
         name: 'gallery',
