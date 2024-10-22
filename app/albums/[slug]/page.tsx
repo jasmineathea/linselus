@@ -39,7 +39,7 @@ export default async function AlbumPage({ params }: AlbumPageProps) {
   return (
     <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
     <Link href="/">
-        <Image src="/images/logo.png" alt="#linselus" width={400} height={300} priority />
+        <Image src="/images/logo2.png" alt="#linselus" width={400} height={300} priority />
     </Link>
 
       <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md w-full max-w-4xl">
