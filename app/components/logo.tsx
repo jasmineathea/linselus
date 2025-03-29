@@ -30,7 +30,7 @@ const Logo = () => {
     <img
       src={images[index]}
       alt="Logo-animasjon"
-      className="h-56 w-auto transition-opacity duration-[700ms] ease-in-out"
+      className="h-32 md:h-40 lg:h-56 w-auto transition-opacity duration-[700ms] ease-in-out"
     />
   );
 };
