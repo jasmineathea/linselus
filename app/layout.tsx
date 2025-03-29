@@ -5,7 +5,7 @@ import "./globals.css";
 const scp = Source_Code_Pro({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "linselus",
+  title: "Linselus",
   description: "en samling av fotoalbum",
   icons: {
     icon: "/images/favicon.png",
