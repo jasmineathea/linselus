@@ -2,9 +2,9 @@ import { client, urlFor } from "@/sanity/lib/client";
 import { defineQuery } from "next-sanity";
 import { notFound } from "next/navigation";
 
-import Image from 'next/image';
 import Link from "next/link";
 import { Footer } from '../../components/footer'
+import Logo from "@/app/components/logo";
 
 const ALBUM_BY_SLUG_QUERY = defineQuery(`*[
   _type == "album" && slug.current == $slug
@@ -39,7 +39,7 @@ export default async function AlbumPage({ params }: AlbumPageProps) {
   return (
     <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
     <Link href="/">
-        <Image src="/images/logo2.png" alt="#linselus" width={400} height={300} priority />
+        <Logo />
     </Link>
 
       <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md w-full max-w-4xl">

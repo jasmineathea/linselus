@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from "next/link";
+import Logo from './components/logo'
 import { Footer } from './components/footer'
 
 import { defineQuery } from "next-sanity";
@@ -25,7 +26,7 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center h-full gap-10 pt-10 px-4 md:px-24 pb-24 w-full">
-    <Image src="/images/logo.png" alt="#linselus" width={400} height={300} priority />
+    <Logo />
     <div className="grid grid-cols-1 sm:grid-cols-4 gap-x-4 gap-y-3 max-w-2xl">
       <h3 className="text-xl font-bold text-center text-stone-300 col-span-2 sm:col-span-4">
         Finn et fotoalbum:
