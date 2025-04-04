@@ -61,7 +61,7 @@ export default async function AlbumPage({ params }: AlbumPageProps) {
         ))}
       </div>
       </div>
-      <Link href="/" className="font-medium text-center text-stone-400 hover:underline hover:text-orange-200">
+      <Link href="/" className="font-medium text-center text-stone-400 hover:underline hover:text-pink-200">
       /cd ..
       </Link>
       <Footer />

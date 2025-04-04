@@ -2,8 +2,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 const images = [
-  '/images/logo-one.png',
-  '/images/logo-two.png',
+  '/images/1.png',
+  '/images/2.png',
+  '/images/3.png',
 ];
 
 const Logo = () => {
@@ -12,8 +13,8 @@ const Logo = () => {
 
   const scheduleNext = () => {
     timeoutRef.current = setTimeout(() => {
-      setIndex(prev => (prev === 0 ? 1 : 0));
-    }, 750);
+      setIndex(prev => (prev + 1) % images.length);
+    }, 1000);
   };
 
   useEffect(() => {
@@ -24,13 +25,13 @@ const Logo = () => {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [index]); // viktig: avhenger av index
+  }, [index]);
 
   return (
     <img
       src={images[index]}
       alt="Logo-animasjon"
-      className="h-32 md:h-40 lg:h-56 w-auto transition-opacity duration-[700ms] ease-in-out"
+      className="h-32 md:h-36 lg:h-48 w-auto transition-opacity duration-[800ms] ease-in-out"
     />
   );
 };

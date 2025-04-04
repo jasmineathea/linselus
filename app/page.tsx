@@ -55,7 +55,7 @@ export default async function Home() {
         Bak kameraet
       </h3>
       <div className="flex flex-col sm:flex-row items-center">
-        <Image src="/images/jasmine.png" alt="jasmine" width={300} height={200} layout="intrinsic" />
+        <Image src="/images/me.png" alt="jasmine" width={300} height={200} layout="intrinsic" />
         <div className="text-base text-pink-300 text-center pb-3 sm:pb-0 sm:px-2 mb-2">
           <p className="mb-4"> Hei og velkommen 👋🏽 </p>
           <p> Jeg heter Jasmine og har en bachelorgrad i informatikk: datateknologi fra UiB. Dette var mitt aller første hobbyprosjekt, hvor jeg fikk samlet flere av interessene mine: programmering, design, og foto. Enjoy! 🎞️</p>
