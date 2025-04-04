@@ -10,12 +10,12 @@ export function Footer() {
           <Link className="text-stone-400 hover:text-orange-100 hover:underline" href="https://www.linkedin.com/in/jasmineathea/">
             /linkedin
           </Link>
-          <Link className="text-stone-400 hover:text-orange-100 hover:underline" href="https://www.instagram.com/jasmineathea/">
-            /instagram
+          <Link className="text-stone-400 hover:text-orange-100 hover:underline" href="https://www.jasmineathea.no/">
+            /portfolio
           </Link>
         </div>
         <p className="text-stone-300">
-          Jasmine A. Næss 🧸 2024
+          Jasmine A. Næss 🩷 2024
         </p>
       </nav>
     );
