@@ -39,12 +39,12 @@ export default async function Home() {
       ))}
     </div>
     <div className="flex flex-col items-center p-5 m-5 bg-stone-800 rounded-md max-w-full w-full sm:max-w-2xl">
-      <h3 className="text-xl font-bold text-center text-pink-300">
+      <h3 className="text-xl font-bold text-center text-pink-400">
         I hovedrollen
       </h3>
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/cam.png" alt="kamera" width={300} height={200} layout="intrinsic" />
-        <div className="text-base text-pink-200 text-center pb-3 sm:pb-0 sm:px-2 mb-2">
+        <div className="text-base text-pink-300 text-center pb-3 pt-3 sm:pb-0 sm:px-2 mb-2">
           <p className="mb-4">Fujifilm Finepix A204 fra 2002. &quot;Kjøpt&#39;n på Tise&quot;, som Mina ville sagt :)</p>
           <p> I mars 2025 tok dette flotte kameraet sitt siste bilde. Vi minnes hennes gode farger, ustabile blits og lekne ånd. Rest in peace 🥺</p>
         </div>
@@ -56,7 +56,7 @@ export default async function Home() {
       </h3>
       <div className="flex flex-col sm:flex-row items-center">
         <Image src="/images/me.png" alt="jasmine" width={300} height={200} layout="intrinsic" />
-        <div className="text-base text-pink-300 text-center pb-3 sm:pb-0 sm:px-2 mb-2">
+        <div className="text-base text-pink-300 text-center pb-3 pt-3 sm:pb-0 sm:px-2 mb-2">
           <p className="mb-4"> Hei og velkommen 👋🏽 </p>
           <p> Jeg heter Jasmine og har en bachelorgrad i informatikk: datateknologi fra UiB. Dette var mitt aller første hobbyprosjekt, hvor jeg fikk samlet flere av interessene mine: programmering, design, og foto. Enjoy! 🎞️</p>
         </div>
